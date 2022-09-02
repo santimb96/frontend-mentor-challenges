@@ -43,10 +43,9 @@ body {
 .card-content {
   width: 90%;
   height: 93.5%;
-  display: grid;
-  grid-template-rows: 65% 35%;
-  justify-items: center;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .card-image {
@@ -89,4 +88,10 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 360px){
+  .card {
+    width: 90%;
+  }
 }
